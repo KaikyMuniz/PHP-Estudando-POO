@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Informe seu carro</title>
+</head>
+<body>
+    <form method="POST" action="../classes/Carro.php">
+        <h1>Registre seu carro</h1>
+        <label>Qual o modelo do carro?</label>
+        <br/>
+        <input type="text" name="modelo" id="modelo" placeholder="Modelo do carro:"/>
+        <br/>
+        <label>Qual a cor do carro?</label>
+        <br/>
+        <input type="text" name="cor" id="cor" placeholder="Cor do carro:"/>
+        <br/>
+        <label>Qual o ano do carro?</label>
+        <br/>
+        <input type="number" name="ano" id="ano" placeholder="Ano do carro:"/>
+        <br/>
+        <label>Você está andando com o carro?</label>
+        <br/>
+        <select name="andando" id="andando">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <br/>
+        <label>Você limpa os parabrisas do carro?</label>
+        <br/>
+        <select name="parabrisas" id="parabrisas">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <br/>
+        <input type="submit" value="Registrar Carro"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Informe sua moto</title>
+</head>
+<body>
+    <form method="POST" action="../classes/Moto.php">
+        <h1>Registre sua moto</h1>
+        <label>Qual o modelo da moto?</label>
+        <br/>
+        <input type="text" name="modelo" id="modelo" placeholder="Modelo da moto:"/>
+        <br/>
+        <label>Qual a cor da moto?</label>
+        <br/>
+        <input type="text" name="cor" id="cor" placeholder="Cor da moto:"/>
+        <br/>
+        <label>Qual o ano da moto?</label>
+        <br/>
+        <input type="number" name="ano" id="ano" placeholder="Ano da moto:"/>
+        <br/>
+        <label>Você está andando com a moto?</label>
+        <br/>
+        <select name="andando" id="andando">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <br/>
+        <label>Você dá grau com a moto?</label>
+        <br/>
+        <select name="grau" id="grau">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <br/>
+        <input type="submit" value="Registrar Moto"/>
+    </form>
+</body>
+</html>
